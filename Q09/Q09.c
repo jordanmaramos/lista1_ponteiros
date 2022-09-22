@@ -2,22 +2,28 @@
 
 int main(){
   char x[4];
-  
-  /* Por ser char, cada posição ocupa apenas bit. 
-  Ao incrementar x[4], a posição de x[0] desloca de 4 em 4 */
-  // Ex:
-  //x =    4D15E094
-  //x+1 =  4D15E098
-  //x+2 =  4D15E09C
-  //x+3 =  4D15E0A0
+  //x =    4092
+  //x+1 =  4093
+  //x+2 =  4094
+  //x+3 =  4095
   
   int x[4];
-  /* Por ser int, ocupa 2 espaços da memória */
-  //x =    A20B3C60
-  //x+1 =  A20B3C64
-  //x+2 =  A20B3C68
-  //x+3 =  A20B3C6C
+  //x =    4092
+  //x+1 =  4096
+  //x+2 =  4100
+  //x+3 =  4104
   
+  float x[4];
+  //x =    4092
+  //x+1 =  4096
+  //x+2 =  4100
+  //x+3 =  4104
+
+  double x[4];
+  //x =    4092
+  //x+1 =  4100
+  //x+2 =  4108
+  //x+3 =  4116
   
   return 0;
 }
